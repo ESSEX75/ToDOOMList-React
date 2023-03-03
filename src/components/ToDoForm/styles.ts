@@ -11,7 +11,7 @@ export const Root = styled.form`
     gap: 10px;
 `
 
-export const ToDoDormInput = styled.input`
+export const Input = styled.input`
     box-sizing: border-box;
     height: 30px;
     width: 85%;

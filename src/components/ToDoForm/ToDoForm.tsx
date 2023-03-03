@@ -1,6 +1,6 @@
 import React, { useState, FC } from 'react'
 import { IToDoForm } from './types'
-import { Root, ToDoDormInput, ToDoFormButton } from './styles'
+import { Root, Input, ToDoFormButton } from './styles'
 
 const ToDoForm: FC<IToDoForm> = ({ addTask }) => {
     const [userInput, setUserInput] = useState<string>('')
@@ -23,7 +23,7 @@ const ToDoForm: FC<IToDoForm> = ({ addTask }) => {
 
     return (
         <Root onSubmit={handleSubmit}>
-            <ToDoDormInput
+            <Input
                 value={userInput}
                 type="text"
                 onChange={handleChange}
